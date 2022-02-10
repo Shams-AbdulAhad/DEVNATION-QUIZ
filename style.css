@@ -1,0 +1,265 @@
+/* Add a black background color to the top navigation */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(41, 17, 148);
+    overflow: hidden;
+}
+.topnav {
+    background-color: rgb(41, 17, 148);
+    overflow: hidden;
+    padding-right: 1%;
+    
+    
+  }
+  .image{
+    height:43px;
+    padding-left: 15%;
+    padding-top: 15%;
+}
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(255, 253, 253);
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #000000;
+    color: rgb(253, 253, 253);
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+
+  /*
+    Home Section
+  */
+  @keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  height: 50%;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite; 
+}
+
+/*
+Our Services
+*/
+
+.Services{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    height: 30%;
+    padding-top: 10%;
+    text-align: center;
+    padding-bottom: 10%;
+}
+.service1{
+    color:white;
+    background-color: aqua;
+    width: 20%;
+    
+} 
+.service2{
+    color:white;
+    background-color: rgb(84, 28, 173);
+    width: 20%;
+} 
+.service3{
+    color:white;
+    background-color: crimson;
+    width: 20%;
+} 
+#image{
+    width: 100%;
+    height: 150px;
+}
+
+/*
+    Team
+*/
+.team{
+    padding-bottom: 5%;
+}
+.heading{
+    text-align: center;
+}
+.ti{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1%;
+}
+.tm{
+    width: 20%;
+    height: 150px;
+    border-radius: 100%;
+    
+}
+.name{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 4%;
+}
+
+.testimonials{
+    background-image:url("background.jpg");
+    
+    width: 100%;
+}
+.client{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:5%;
+    padding-bottom: 5%;
+    
+}
+#client{
+    width: 40%;
+    align-items: center;
+    padding-top: 4%;
+    padding-left: 12%;
+    border-radius: 100%;
+   
+   
+}
+.head{
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+}
+p{
+    color: white;
+    
+    
+}
+/*Sponsors*/
+.sponsors{
+   padding-top: 5%;
+   padding-bottom: 5%;
+}
+.partners{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    
+}
+.text{
+    text-align: center;
+}
+.im{
+    width: 13%;
+    height:100px;
+}
+
+
+
+/*
+    Contact Us
+*/
+
+* {
+    box-sizing: border-box;
+
+  }
+
+
+
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #3734eb;
+  
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(24, 99, 211);
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #000000;
+    border-color: #000000;
+    padding: 10px;
+    margin-top: 2%;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  /*
+    Footer
+  */
+  .footer{
+      background-color: black;
+      text-align: center;
+      
+  }
